@@ -1,16 +1,18 @@
 using UnityEngine;
 
-public class CarUtrun : MonoBehaviour
+public class AutoMoveRB : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float speed = 10f;
+    private Rigidbody rb;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        Vector3 move = Vector3.back * speed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + move);
     }
 }
