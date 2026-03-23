@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Pendulum : MonoBehaviour
 {
-
-    public float speed =80f;
+    public float speed = 80f;
     private Rigidbody rb;
 
     void Start()
@@ -11,10 +10,12 @@ public class Pendulum : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate() 
     {
-        rb.AddForce(Vector3.right * speed);
+        rb.AddForce(Vector3.left * speed);
     }
+}
+    
 
     /* [Header("Swing Setting")]
      float startForce = 7000f;
@@ -43,4 +44,4 @@ public class Pendulum : MonoBehaviour
      }
  */
   
-}
+

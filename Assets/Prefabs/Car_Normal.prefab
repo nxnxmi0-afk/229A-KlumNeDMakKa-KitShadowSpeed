@@ -66,9 +66,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6c1655dae22b9e042806321a0d3fcc5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3289848686706486916}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6c1655dae22b9e042806321a0d3fcc5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6781124598363176086}
   m_SourcePrefab: {fileID: 100100000, guid: 6c1655dae22b9e042806321a0d3fcc5b, type: 3}
 --- !u!1 &5856112930412943375 stripped
 GameObject:
@@ -123,16 +120,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &6781124598363176086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5856112930412943375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c924a676ecf8e045839a90750570a88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AutoMove
-  speed: 11
