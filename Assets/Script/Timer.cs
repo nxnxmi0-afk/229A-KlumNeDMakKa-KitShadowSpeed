@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public PlayerContoller playerContoller;
     [SerializeField] TextMeshProUGUI timerText;
-    float time = 10.0f;
-    float timeLeft = 4.0f ;
+    float time ;
 
     // Update is called once per frame
     void Update()
     {
+        time = playerContoller.timeLeft;
         if (time > 5)
         {
             time -= Time.deltaTime;

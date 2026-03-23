@@ -10,7 +10,7 @@ public class RopeFollow : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = ball.position - transform.parent.position;
-        transform.up = direction;
+       /* Vector3 direction = ball.position - transform.parent.position;
+        transform.up = direction;*/
     }
 }
