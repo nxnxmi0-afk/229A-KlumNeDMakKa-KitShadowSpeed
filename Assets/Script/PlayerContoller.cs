@@ -30,7 +30,7 @@ public class PlayerContoller : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject)
+        if (other.CompareTag("Object"))
         {
             if (health >= 1)
             {
