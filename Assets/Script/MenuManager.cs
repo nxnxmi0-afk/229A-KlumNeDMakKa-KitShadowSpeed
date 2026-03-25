@@ -8,7 +8,10 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
-
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene("SettingScene");     
+    }
     public void ExitGame()
     {
         Application.Quit();
