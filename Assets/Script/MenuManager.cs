@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     }
     public void OpenSettings()
     {
-        SceneManager.LoadScene("SettingScene");     
+        SceneManager.LoadScene("Setting");     
     }
     public void ExitGame()
     {
