@@ -225,4 +225,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a87149b55c52147bfbd9d98a24ae8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pendulum
-  speed: 80
+  speed: 300
