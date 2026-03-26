@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Car_Player
   - Object
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Object
+  - Car_Player
   - 
   - 
   - 

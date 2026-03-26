@@ -4,6 +4,7 @@ public class AutoMove : MonoBehaviour
 {
     public float speed = 10f;
     private Rigidbody rb;
+    bool IsAvoid;
 
     void Start()
     {
@@ -12,6 +13,29 @@ public class AutoMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, speed);
+        Vector3 move;
+        if (IsAvoid == true)
+        {
+            move = Vector3.right * speed * Time.fixedDeltaTime;
+        }
+        else
+        {
+            move = Vector3.forward * speed * Time.fixedDeltaTime;
+        }
+        rb.MovePosition(rb.position + move);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Rock"))
+        {
+            IsAvoid = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Rock"))
+        {
+            IsAvoid = false;
+        }
     }
 }

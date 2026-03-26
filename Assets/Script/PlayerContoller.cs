@@ -5,7 +5,7 @@ public class PlayerContoller : MonoBehaviour
 {
     [SerializeField] float speed = 2.0f;
     [SerializeField] float speedTurn = 1.0f;
-    [SerializeField] public float timeLeft = 45.0f ;
+    [SerializeField] public float timeLeft = 55.0f ;
     [SerializeField] public int health = 3 ;
     Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
